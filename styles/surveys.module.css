@@ -1,0 +1,19 @@
+.mainContainer {
+  background-color: #f2ffff;
+  height: 100vh;
+}
+.filter {
+  max-width: 240px;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  height: 50vh;
+  /* background-color: gray; */
+}
+.filterbackground {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+}
+.addSurveyBtn {
+  background-color: #40d469;
+  color: white;
+  border-radius: 16px;
+}

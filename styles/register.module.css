@@ -1,0 +1,74 @@
+.mainRow {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+.ehniiCol {
+  background-color: #d8ffff;
+}
+.hyorCol {
+  background-color: #f2ffff;
+  height: 100vh;
+}
+.burtTitle {
+  margin-top: 140px;
+  color: #0e80f1;
+}
+.progressDot {
+  width: 500px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #0ef1f1;
+  border-radius: 50%;
+}
+.dotBorderPad {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: #0ef1f1;
+  border: 2px solid #f2f2f2;
+  box-shadow: 0 0 0 1px #0e80f1;
+}
+.nextDot {
+  width: 400px;
+}
+
+.nextDot:last-child .dot::before,
+.nextDot:last-child .dot::after {
+  display: none;
+}
+.nextDot .dot::before,
+.nextDot .dot::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 130px;
+  background-color: rgba(0, 0, 0, 0.233);
+  margin-top: 4px;
+  margin-left: 23px;
+}
+
+.colContainer {
+  width: 600px;
+}
+
+.registerInput {
+  width: 272px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #0e80f160;
+}
+.nextBtn {
+  width: 240px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #0e80f1;
+  color: white;
+  font-size: 24px;
+}
+.registerInputBogino {
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #0e80f160;
+}
