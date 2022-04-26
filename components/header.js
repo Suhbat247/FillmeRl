@@ -1,4 +1,5 @@
 import styles from "../styles/header.module.css";
+import Link from "next/link";
 import { useRouter } from "next/dist/client/router";
 
 const Login = () => {
@@ -31,28 +32,31 @@ const Login = () => {
         <div className="collapsecollapse" id="navbarSupportedContent">
           <ul id={styles.ulul} className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a
-                className={"nav-link" + isActive("/about")}
-                aria-current="page"
-                href="about"
-              >
-                Бидний тухай
-              </a>
+              <Link href="about">
+                <a
+                  className={"nav-link" + isActive("/about")}
+                  aria-current="page"
+                >
+                  Бидний тухай
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className={"nav-link" + isActive("/surveys")} href="surveys">
-                Судалгаанууд
-              </a>
+              <Link href="surveys">
+                <a className={"nav-link" + isActive("/surveys")}>
+                  Судалгаанууд
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className={"nav-link" + isActive("gift")} href="gift">
-                Урамшуулал
-              </a>
+              <Link href="gift">
+                <a className={"nav-link" + isActive("gift")}>Урамшуулал</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className={"nav-link" + isActive("login")} href="login">
-                Нэвтрэх
-              </a>
+              <Link href="login">
+                <a className={"nav-link" + isActive("login")}>Нэвтрэх</a>
+              </Link>
             </li>
           </ul>
         </div>

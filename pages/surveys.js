@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import styles from "../styles/surveys.module.css";
 import Survey from "../components/survey";
+import Zoos from "../components/icons/zoos";
 
 const Surveys = () => {
   return (
@@ -14,7 +15,10 @@ const Surveys = () => {
             </div>
           </div>
           <p className="p-3">
-            Таны үлдэгдэл оноо: <span>247,000</span>
+            Таны үлдэгдэл оноо:{" "}
+            <span>
+              247,000 <span> </span> <Zoos />
+            </span>
           </p>
         </div>
         <div className="container-fluid mx-5 px-5">

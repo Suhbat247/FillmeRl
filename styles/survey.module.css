@@ -4,10 +4,13 @@
   border-radius: 12px;
   border: 1px solid black;
   padding: 0px;
+  background-color: white;
 }
 .header {
   height: 52px;
   border-bottom: 1px black solid;
+  background-color: #a8f0f0;
+  border-radius: 12px 12px 0px 0px;
 }
 .header p {
   width: 244px;
@@ -27,4 +30,18 @@
   height: 120px;
   margin-left: -20px;
   border-radius: 10px;
+}
+.mainCol button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 320px;
+  height: 200px;
+  border-radius: 12px;
+  /* border: 1px solid black; */
+  padding: 0px;
 }
