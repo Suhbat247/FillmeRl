@@ -154,7 +154,7 @@ const register = () => {
               </div>
               <div className={`${styles.colContainer} row mt-3 row-cols-2`}>
                 <div className={`${styles.rowColWidth} col mt-3`}>
-                  <div className={` titleInput`}>НЭВТРЭХ НЭР</div>
+                  <div className={` titleInput`}> ОВОГ</div>
                   <input
                     type="text"
                     className={`${styles.registerInput} form-control`}
@@ -164,7 +164,7 @@ const register = () => {
                   />
                 </div>
                 <div className={`${styles.rowColWidth} col mt-3`}>
-                  <div className={` titleInput`}>И-МЭЙЛ</div>
+                  <div className={` titleInput`}>НЭР</div>
                   <input
                     type="text"
                     className={`${styles.registerInput} form-control`}
@@ -174,7 +174,7 @@ const register = () => {
                   />
                 </div>
                 <div className={`${styles.rowColWidth} col mt-3`}>
-                  <div className={` titleInput`}>НУУЦ ҮГ</div>
+                  <div className={` titleInput`}>УТАСНЫ ДУГААР </div>
                   <input
                     type="text"
                     className={`${styles.registerInput} form-control`}
