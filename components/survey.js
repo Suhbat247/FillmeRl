@@ -1,42 +1,42 @@
 import styles from "../styles/survey.module.css";
 import Tsag from "../components/icons/tsag";
 import Zoos from "../components/icons/zoos";
-import Tsagiinzuu from "./icons/tsaginZuu";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+
 const survey = () => {
   return (
     <div className={`${styles.mainCol} col mx-3 my-2`}>
-      <button type="button" data-bs-toggle="modal" data-bs-targer="#myModal">
-        <div className={`${styles.header}`} id="myModal">
-          <p className="mt-1">
-            Цаxим хэрэглээ болон Цаxим хэрэглээ болон контент үзэлт
+      <button className="d-flex flex-column">
+        <div className={`${styles.header}`}>
+          <p className="text-start ms-2">
+            Цаxим хэрэглээ болон контент үзэлт контент үзэлт контент үзэлт
           </p>
         </div>
-        <div className={`${styles.about} d-flex `}>
+        <div className={`${styles.information} d-flex`}>
           <div
-            className={`${styles.information} ms-3 d-flex flex-column justify-content-end align-items-start`}
+            className={`${styles.medeelel} text-start d-flex flex-column justify-content-end ms-3`}
           >
             <div className={`${styles.hugatsa}`}>
-              <p className="fw-light">
+              <p className="fs-4">
                 <span>
                   <Tsag></Tsag>
-                </span>{" "}
-                5-10 мин
+                </span>
+                2-3 мин
               </p>
             </div>
-            <div className={`onoo fs-2`}>
+            <div className={`${styles.onoo} fs-3`}>
               <p>
                 100
-                <span>
-                  <Zoos />
-                </span>
+                <Zoos />{" "}
               </p>
             </div>
           </div>
           <div
-            className={`${styles.zurag} d-flex justify-content-center align-items-center`}
+            className={`${styles.zurag} d-flex align-items-center justify-content-center`}
           >
             <img
-              src="https://visme.co/blog/wp-content/uploads/2020/03/Header-1200.png"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZXIqROGzqrW5mjnVGRGiH1OwM91Y7kZbU0w&usqp=CAU"
               alt=""
             />
           </div>

@@ -212,7 +212,7 @@ const register = () => {
                 className={`${styles.nextBtn} btn d-flex justify-content-center align-items-center mt-5`}
                 onClick={() => setTab(2)}
               >
-                ОРУУЛАХ
+                ls ОРУУЛАХ
               </div>
             </div>
           </div>
