@@ -1,5 +1,6 @@
-import styles from "../styles/register.module.css";
 import { useState } from "react";
+import styles from "../styles/register.module.css";
+
 const register = () => {
   const [tab, setTab] = useState(0);
 

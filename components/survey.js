@@ -2,12 +2,17 @@ import styles from "../styles/survey.module.css";
 import Tsag from "../components/icons/tsag";
 import Zoos from "../components/icons/zoos";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const survey = () => {
+const survey = ({ surveyData, handleClick }) => {
+  const [modal, setModal] = useState(false);
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
-    <div className={`${styles.mainCol} col mx-3 my-2`}>
-      <button className="d-flex flex-column">
+    <div className={`${styles.mainCol} col mx-3 my-2`} onClick={handleClick}>
+      <button onClick={toggleModal} className="d-flex flex-column">
         <div className={`${styles.header}`}>
           <p className="text-start ms-2">
             Цаxим хэрэглээ болон контент үзэлт контент үзэлт контент үзэлт

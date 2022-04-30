@@ -2,8 +2,12 @@ import Header from "../components/header";
 import styles from "../styles/surveys.module.css";
 import Survey from "../components/survey";
 import Zoos from "../components/icons/zoos";
+import Modal from "../components/modal";
+import survey from "../components/survey";
 
+import { useState } from "react";
 const Surveys = () => {
+  const [modal, setModal] = useState(false);
   return (
     <div>
       <Header />
@@ -77,17 +81,19 @@ const Surveys = () => {
             <div className={`col`}>
               <div className={`container-fluid mx-5`}>
                 <div className="row row-cols-3">
-                  <Survey />
-                  <Survey />
-                  <Survey />
-                  <Survey />
-                  <Survey />
+                  {[1, 2, 3, 4, 5, 6, 8, 9].map((survey) => (
+                    <Survey
+                      surveyData={survey}
+                      handleClick={() => setModal(survey)}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {modal && <Modal surveyData={modal} onClose={() => setModal(null)} />}
     </div>
   );
 };

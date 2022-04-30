@@ -1,0 +1,36 @@
+.modalPop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(54, 54, 54, 0.105);
+}
+.modalContent {
+  height: 700px;
+  width: 1000px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.155);
+}
+.zurag {
+  width: 250px;
+}
+.zurag img {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+}
+.container {
+}
+.closeBtn {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 10px;
+}
+.aboutSur h1 {
+  width: 450px;
+}
+.aboutSur hr {
+  width: 492px;
+}
+.aboutSur p {
+  width: 492px;
+}
